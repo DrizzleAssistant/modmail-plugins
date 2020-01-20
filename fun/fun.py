@@ -170,12 +170,7 @@ class Fun(Cog):
             search_terms.replace("+", "%2B").replace(" ", "+"), mass_mentions=True
         )
         await ctx.send("<https://lmgtfy.com/?q={}>".format(search_terms))
-        
-    @commands.command()
-    async def say(self,ctx,* ,message):
-        """Make the bot say something"""
-        msg = escape(message,mass_mentions=True)
-        await ctx.send(msg)
+         
     @commands.command()
     async def reverse(self, ctx, *, text):
         """!txeT ruoY esreveR"""
