@@ -155,7 +155,7 @@ class Fun(Cog):
         if question.endswith("?") and question != "?":
             await ctx.send((choice(self.ball)))
         else:
-            await ctx.send("That doesn't look like a question.")
+            await ctx.send("That doesn't look like a question. *If you believe this is a question, try adding a question mark (?) to the end.*")
 
     @commands.command(aliases=["badjoke"])
     async def dadjoke(self,ctx):
